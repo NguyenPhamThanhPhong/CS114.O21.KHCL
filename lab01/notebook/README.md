@@ -26,8 +26,10 @@ trong hàm "load_img":
 ```
 
 hàm run_example():
+```
     +load ảnh lần lượt từ directory real_test1-> real_test6
     +ở mỗi folder sẽ load ảnh từ 0.jpg -> 9.jpg
     +kiểm tra ảnh có match với tên hay không (do tên đã đặt vậy để dễ check Kết quả)
     +Load ảnh, và confidence của mỗi ảnh để kiểm tra
     +Kết quả cuối cùng: accuracy đúng = 60%, đúng 36/60
+```
