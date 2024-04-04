@@ -1,9 +1,15 @@
 ##Nhận xét:
+---
+
+```
     + Kết quả thay đổi dựa vào độ sáng của ảnh chụp
     + Kết quả thay đổi dựa vào góc chụp, và size ảnh (do khi resize sẽ ép về dạng 28x28)
     + Kết quả thay đổi dựa vào chữ viết, do kết quả train chỉ áp dụng cho 1 số hình nhất định
     +    Vd: 1 hình que thẳng đứng, 7 không có dấu gạch lưng, 9 không có nét cong ở dưới...
     + Kết quả thay đổi dựa vào màu nền, nếu dùng giấy ô ly, không đạt hiệu quả
+```
+
+---
 
 Giải thích các hàm đã chỉnh sửa: Hàm run_example() và hàm load_image()
 
