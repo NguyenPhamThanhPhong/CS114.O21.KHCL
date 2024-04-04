@@ -16,15 +16,16 @@ trong đó:
 + threshold là ngưỡng để mà quyết định tính nhị phân của pixel
 
 trong hàm "load_img":
+```
     +đã load opencv (cv2)
     +b1 đọc ảnh chuyển thành dạng trắng đen ( chỉ có 1 kênh màu k còn rgb)
     +b2 scale ảnh với alpha & beta: alpha là độ tương phản, beta = dộ tăng giảm pixel
     +b3 threshold cái ảnh: quyết định tính trắng đen của pixel dựa trên ngưỡng chọn là 130 (nghĩa là >130 sẽ là 0 (trắng), <= 130 là đen, do parameter 255 nghĩa là sẽ revert trằng -> đen, đen-> trắng)
     +b4 định nghĩa 1 kernel để giản nở: đã đặt cho "dilation_kernel_size=3", dãn phần trắng xung qua 3px
     +b5 resize - reshape lại cho đúng dạng (1,28,28,1): phần còn lại giữ nguyên
+```
 
 hàm run_example():
-
     +load ảnh lần lượt từ directory real_test1-> real_test6
     +ở mỗi folder sẽ load ảnh từ 0.jpg -> 9.jpg
     +kiểm tra ảnh có match với tên hay không (do tên đã đặt vậy để dễ check Kết quả)
