@@ -1,9 +1,9 @@
-Nhận xét:
-    -Kết quả thay đổi dựa vào độ sáng của ảnh chụp
-    -Kết quả thay đổi dựa vào góc chụp, và size ảnh (do khi resize sẽ ép về dạng 28x28)
-    -Kết quả thay đổi dựa vào chữ viết, do kết quả train chỉ áp dụng cho 1 số hình nhất định
-    -    Vd: 1 hình que thẳng đứng, 7 không có dấu gạch lưng, 9 không có nét cong ở dưới...
-    -Kết quả thay đổi dựa vào màu nền, nếu dùng giấy ô ly, không đạt hiệu quả
+##Nhận xét:
+    + Kết quả thay đổi dựa vào độ sáng của ảnh chụp
+    + Kết quả thay đổi dựa vào góc chụp, và size ảnh (do khi resize sẽ ép về dạng 28x28)
+    + Kết quả thay đổi dựa vào chữ viết, do kết quả train chỉ áp dụng cho 1 số hình nhất định
+    +    Vd: 1 hình que thẳng đứng, 7 không có dấu gạch lưng, 9 không có nét cong ở dưới...
+    + Kết quả thay đổi dựa vào màu nền, nếu dùng giấy ô ly, không đạt hiệu quả
 
 Giải thích các hàm đã chỉnh sửa: Hàm run_example() và hàm load_image()
 
@@ -24,8 +24,9 @@ trong hàm "load_img":
     +b5 resize - reshape lại cho đúng dạng (1,28,28,1): phần còn lại giữ nguyên
 
 hàm run_example():
-    load ảnh lần lượt từ directory real_test1-> real_test6
-    ở mỗi folder sẽ load ảnh từ 0.jpg -> 9.jpg
-    kiểm tra ảnh có match với tên hay không (do tên đã đặt vậy để dễ check Kết quả)
-    Load ảnh, và confidence của mỗi ảnh để kiểm tra
-    Kết quả cuối cùng: accuracy đúng = 60%, đúng 36/60
+
+    +load ảnh lần lượt từ directory real_test1-> real_test6
+    +ở mỗi folder sẽ load ảnh từ 0.jpg -> 9.jpg
+    +kiểm tra ảnh có match với tên hay không (do tên đã đặt vậy để dễ check Kết quả)
+    +Load ảnh, và confidence của mỗi ảnh để kiểm tra
+    +Kết quả cuối cùng: accuracy đúng = 60%, đúng 36/60
