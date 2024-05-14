@@ -37,5 +37,6 @@ hàm run_example():
     +ở mỗi folder sẽ load ảnh từ 0.jpg -> 9.jpg
     +kiểm tra ảnh có match với tên hay không (do tên đã đặt vậy để dễ check Kết quả)
     +Load ảnh, và confidence của mỗi ảnh để kiểm tra
-    +Kết quả cuối cùng: accuracy đúng = 60%, đúng 36/60
+    
 ```
+###Kết quả cuối cùng: accuracy đúng = 53.33%, đúng 32/60
